@@ -80,6 +80,7 @@ h1 {
   margin-bottom: 1rem;
   object-fit: cover;
   padding: 1.5%;
+  ;
 }
 
 .bake .recipes ul li img {
@@ -91,9 +92,34 @@ h1 {
     text-decoration: none;
     position: absolute;
     margin-left: 10px;
+    font-family: 'Concert One', cursive;
+    font-size: 1.2rem;
 }
 
 .bake .recipes ul li p {
     position: relative;
-    bottom: 70px;
+    bottom: 68px;
+    padding-left: 130px;
+    width: 100%;
+    font-family: 'Concert One', cursive;
+    flex-wrap: wrap;
+
+}
+
+.bake .recipes ul li button {
+    position: relative;
+    bottom: 65px;
+    left: 130px;
+    cursor: pointer;
+    font-family: 'Concert One', cursive;
+    font-size: 17px;
+    background-color: pink;
+    border: none;
+    color: rgb(225, 73, 124);
+    flex-wrap: wrap;
+}
+
+.bake .recipes ul li button:hover,
+.bake .recipes ul li button:active {
+    color: rgb(167, 0, 56);
 }
