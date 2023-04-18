@@ -4,12 +4,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
+
 body {
     background-image: url("Images/Wallpaper-House.com_223381.jpg");
-    background-repeat: no-repeat;
-    height: 100vh;
     background-size: 100%;
+    background-repeat: repeat;
+    background-position: center;
+    width: 100%;
+    position: relative;
 }
 
 header nav {
@@ -32,6 +36,11 @@ nav ul li {
     font-size: 1.5rem;
     cursor: pointer;
     display: block;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
 }
 
 h1 {
@@ -119,7 +128,105 @@ h1 {
     flex-wrap: wrap;
 }
 
-.bake .recipes ul li button:hover,
-.bake .recipes ul li button:active {
+
+.bake .recipes ul li button a{
+    display: flex;
+    position: relative;
+    bottom: -6px;
+    left: -10px;
+    font-size: 16px;
+    color: rgb(225, 73, 124);
+    flex-wrap: wrap;
+}
+
+.bake .recipes ul li button a:hover,
+.bake .recipes ul li button a:active {
     color: rgb(167, 0, 56);
 }
+
+.brown {
+    color: brown;
+}
+
+
+.container {
+    position: relative;
+    background-color: rgb(232, 66, 121);
+    color: #fff;
+    width: calc(50% - 32px);
+    height: auto;
+    padding: 32px;
+    margin: 0 auto 4em auto;
+    font-family: 'Concert One', cursive;
+    cursor: pointer;
+    border-radius: 1%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+.imag-recipe {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.imag-recipe img {
+    width: 360px;
+    height: 330px;
+    border-radius: 2%;
+    border: lightpink 4px solid;
+    transition: transform 0.3s ease;
+}
+
+.imag-recipe img:hover {
+  transform: scale(1.1);
+}
+
+.highlight {
+    border: 0.1em dotted pink;
+    margin-top: 0.2em;
+    display: flex;
+    padding: 0.5rem;
+    gap: 10px;
+    margin-bottom: 1em;
+}
+
+.Ingredients {
+    display: grid;
+    width: fit-content;
+    height: auto;
+    overflow: hidden;
+}
+
+h3 {
+    margin-bottom: 0.5em;
+}
+
+hr {
+    background-color: #fff;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 2px;
+    height: 20px;
+    width: 100%;
+    color: #fff;
+    background-color: rgb(225, 73, 124);
+    position: fixed;
+    bottom: 0;
+}
+
+@media (max-width: 767px) {
+    body {
+      background-image: url("Images/Wallpaper-House.com_223381.jpg");
+    }
+  }
