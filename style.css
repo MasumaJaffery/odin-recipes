@@ -108,9 +108,6 @@ h1 {
 }
 
 .bake .recipes ul li p {
- /*   position: relative;
-    bottom: 68px;  */
-/*    padding-left: 32%; */
     width: 100%;
     padding-left: 3%;
     font-family: 'Concert One', cursive;
@@ -119,10 +116,6 @@ h1 {
 }
 
 .bake .recipes ul li button {
-  /*  position: relative;
-    bottom: 65px; 
-    left: 130px; */
-  /*  padding-left: 32%; */
     cursor: pointer;
     font-family: 'Concert One', cursive;
     font-size: 17px;
@@ -136,9 +129,6 @@ h1 {
 
 .bake .recipes ul li button a {
     display: flex;
-  /*  position: relative;
-    bottom: -6px;
-    left: -10px; */
     font-size: 16px;
     color: rgb(225, 73, 124);
     flex-wrap: wrap;
